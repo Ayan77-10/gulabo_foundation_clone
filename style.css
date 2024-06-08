@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.hamburger{
+    display: none;
+    width: 10%;
+    height: 20%;
+    /* z-index: 100000; */
+}
+.toggle.active{
+    display: block;
+}
+.navbar{
+    height: 24vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Montserrat' , 'sans-serif';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust as needed */
+    z-index: 500; /* Adjust as needed */
+    
+}
+.header{
+    border: 1px solid white;
+    flex: 0.4;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position:fixed ; */
+    font-weight: bold;
+    color: white;
+    background-color: #EE6C4E;
+    z-index: 0;
+}
+ul li{
+    list-style: none;
+}
+:is(ul) a{
+    text-decoration: none;
+    color: white;
+
+}
+.headerRight{
+    width: 1000px;
+    /* border: 1px solid orange; */
+}
+.commonHeader{
+    width: 30vw;
+    height: 10vh;
+    /* flex: 0.5; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navList{
+    /* height: 2vh; */
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+.list{
+    width: 60vw;
+    height: 10vh;
+    /* border: 1px solid black; */
+    display: flex;
+    font-family: 'Montserrat' , 'sans-serif';
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: transparent; */
+    color: black;
+}
+.list li a{
+    color: black;
+}
+.list li a:hover{
+    color: #EE6C4E;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.3s ease; 
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 80vw;
+}
+/* IMAGE DIV STYLING */
+.image{
+    margin-top: 6rem;
+    width: 100vw;
+    height: 80vh;
+    transition: margin-top 0.3s ease;
+}
+#img{
+    image-rendering: auto;
+    image-orientation: landscape;
+    width: 100vw;
+    height: 50vh;
+}
+/* INFO SECTION STYLING */
+.info{
+    width: 100vw;
+    height: 25vw;
+    /* border: 1px solid black; */
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+.info h1{
+    font-size: 3.5rem;
+    font-weight: 500 ;
+}
+.subInfo{
+    width: 80vw;
+    height: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    /* border: 1px solid black; */
+    margin-left: 135px;
+}
+.jobs{
+    width: 5vw;
+    height: 250px;
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    text-align: left;
+}
+#infoCommon{
+    width: 10vw;
+   height: 20vh; 
+   /* border: 1px solid yellow; */
+   /* border-radius: 10px ; */
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items:flex-start;
+   
+} 
+:is(.Jobs ,.Medical ,.Education ,.Marriage) h4{
+    font-size: 1.5rem;
+}
+
+hr{
+    width: 45%;
+    margin-top: 25px;
+} 
+/* DONATE INFO SECTION STYLING */
+
+#donate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    /* flex-wrap: wrap-reverse; */
+    
+}
+.leftD{
+    width: 35vw;
+    /* border: 1px solid black; */
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Staatliches';
+}
+.leftD h6{
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #c03f22;
+}
+.leftD h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.leftD p{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    line-height: 25px;
+    text-align: justify;
+    text-decoration: solid;
+}
+.rightD{
+    width: 25vw;
+    height: 50vh;
+    /* border: 1px solid yellow; */
+    margin-right: 2rem;
+}
+/* BANK DETAILS STYLING */
+.bank{
+    width: 100;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 12rem;
+    gap: 2rem;
+}
+.bank h4{
+    font-family: 'Staatliches';
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #c03f22;
+
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    
+}
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+.bottom p{
+    text-align: left;
+}
+.text{
+    font-weight: bolder;
+    font-size: 0.9rem;
+    font-family: 'Montserrat';
+
+}
+/* CONTACT DETAILS */
+.contact{
+    margin-top: 6rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.contact h1{
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    font-family: 'Staatliches';
+    color: #c03f22;
+}
+.contact p{
+    color: #EE6C4E;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.icon{
+    place-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.toggle{
+    width: 50vw;
+    height:30vh;
+    background-color: whitesmoke;
+    z-index: 1000;
+    /* scale: 1.1; */
+    position: absolute;
+    left: 50%;
+    position: fixed;
+    opacity: 100;
+    display: none;
+}
+.toggle ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Staatliches','san-serif';
+    font-size: 1.5rem;
+    text-transform:uppercase;
+    text-shadow: 2px 2px  black;
+    color: #EE6C4E;
+}
+.item{
+    color: white;
+}
+
+@media  (width <480px){
+   .hamburger{
+    display: block;
+   }
+    .navbar{
+        width: 100%;
+    }
+    .navbar{
+        /* display: none; */
+        height: 10vh;
+        width: 98vw;
+        display: flex;
+        
+        justify-content:space-between;
+        align-items: center;
+        
+
+    }
+    .navList{
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+    }
+    .header{
+        display:none;
+    }
+    .logo{
+        font-weight: bold;
+    }
+    .list{
+        display: none;
+    }
+    #donate{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100vw;
+        object-fit: fill;
+        height: 25vh;
+    }
+    .info{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-color: whitesmoke  ;
+    }
+    .info h1{
+        font-size: 1.7rem;
+        margin-left: 5rem;
+
+    }
+    .subInfo{
+        /* border: 1px solid black; */
+        height:45vh;
+        object-fit: cover;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1px;
+        margin-left: 1rem;
+    
+
+    }
+  #infoCommon{
+      border-bottom: 1px solid black;
+      height: 25%;
+      width: 100%;
+      padding: 0;
+  }
+  hr{
+    margin-top: 10px;
+    width: 15%;
+    color: #c03f22;
+  }
+  :is(.Jobs ,.Medical ,.Education ,.Marriage) h4{
+    font-size: 1.2rem;
+}
+    #donate{
+        display: flex;
+        margin: 0;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 65vh;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        margin-bottom: 0.3rem;
+        background-color: whitesmoke;
+    }
+    .leftD{
+        width: 85%;
+        margin-left:10px ;
+        /* justify-content: center; 
+        align-items: center; */
+        
+    }
+    .leftD h6{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .rightD{
+        width: 75%;
+        height: 45%;
+        margin: 0 auto;
+    }
+    .rightD img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .top {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        gap: 1rem;
+        /* padding-left: 20px; */
+
+       
+    }
+    .bottom {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        gap: 1rem;
+        /* padding-left: 20px; */
+        margin-top: -60px;
+    }
+    .bank{
+        height: 45vh;
+        margin-top: 1rem;
+        background-color: whitesmoke;
+
+    }
+    .bank p{
+        font-size: 1rem;
+    }
+    .contact{
+        background-color:whitesmoke ;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .contact h1{
+        font-size: 3rem;
+    }
+   
+}
